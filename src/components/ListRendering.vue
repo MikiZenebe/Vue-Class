@@ -1,5 +1,5 @@
 <template>
-    <h2 v-for="(name, index) in names" :key="name">{{ index }}:{{ name }}</h2>
+    <h2 v-for="(name) in names" :key="name">{{ name }}</h2>
     <h2 v-for="name in fullNames" :key="name.first">
         {{ name.first }} {{ name.last }}
     </h2>
@@ -9,7 +9,7 @@
         <h3 v-for="skill in dev.skills" :key="movie">{{ skill }}</h3>
     </div>
 
-    <h2 v-for="(value, key, index) in myInfo" :key="value">{{ index }} {{ key }} {{ value }}</h2>
+    <!-- <h2 v-for="(value, key, index) in myInfo" :key="value">{{ index }} {{ key }} {{ value }}</h2> -->
 </template>
 
 <script>

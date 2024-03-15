@@ -2,6 +2,7 @@
 import Binding from "@/components/Binding.vue";
 import ConditionalRender from "@/components/ConditionalRender.vue";
 import ListRendering from "@/components/ListRendering.vue";
+import Methods from "@/components/Methods.vue";
 
 export default {
   name: "App",
@@ -9,6 +10,7 @@ export default {
     Binding,
     ConditionalRender,
     ListRendering,
+    Methods
   },
 };
 </script>
@@ -16,6 +18,7 @@ export default {
 <template>
   <!-- <Binding />
   <ConditionalRender /> -->
-  <ListRendering />
+  <!-- <ListRendering /> -->
+  <Methods />
 </template>
 ;
