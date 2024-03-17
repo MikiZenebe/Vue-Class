@@ -3,6 +3,7 @@ import Binding from "@/components/Binding.vue";
 import ConditionalRender from "@/components/ConditionalRender.vue";
 import ListRendering from "@/components/ListRendering.vue";
 import Methods from "@/components/Methods.vue";
+import EventHandler from '@/components/EventHandler.vue'
 
 export default {
   name: "App",
@@ -10,7 +11,8 @@ export default {
     Binding,
     ConditionalRender,
     ListRendering,
-    Methods
+    Methods,
+    EventHandler
   },
 };
 </script>
@@ -19,6 +21,15 @@ export default {
   <!-- <Binding />
   <ConditionalRender /> -->
   <!-- <ListRendering /> -->
-  <Methods />
+  <!-- <Methods /> -->
+  <EventHandler />
 </template>
 ;
+
+
+<style>
+
+  #app{
+   text-align: center;
+  }
+</style>
