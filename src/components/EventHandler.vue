@@ -1,14 +1,14 @@
 <template>
     <h2>{{ name }}</h2>
     <div>
-        <button v-on:click="name = 'Is Good'">Click Change name</button>
+        <button v-on:click="changeName">Click Change name</button>
         <button v-on:mouseover="name = 'Is Good'">Hover to Change name</button>
     </div>
 
     <h2>{{ count }}</h2>
     <div>
-        <button v-on:click="Increment(5)">Increment 5</button>
-        <button v-on:click="Decrement(10)">Decrement 10</button>
+        <button @click="Increment(5)">Increment 5</button>
+        <button @click="Decrement(10)">Decrement 10</button>
     </div>
 </template>
 
@@ -23,6 +23,10 @@ export default {
     },
 
     methods: {
+        changeName(event) {
+            this.name = "Micky"
+            console.log("Event", event)
+        },
         Increment(num) {
             this.count += num
         },
